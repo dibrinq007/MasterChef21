@@ -1,0 +1,524 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Bem-vindo ao nosso estúdio!</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Me diga mais</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Services</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- receita Grid-->
+    <section class="page-section bg-light" id="receita">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Receita</h2>
+                <h3 class="section-subheading text-muted">TODAS AS RECEITAS </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- receita item 1-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal1">
+                            <img class="img-fluid" src="assets/img/receita/1.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Salmão com ervas e tomate recheado</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- receita item 2-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal2">
+                            <img class="img-fluid" src="assets/img/receita/2.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Lasanha à bolonhesa com massa de pastel</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- receita item 3-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal3">
+                            <img class="img-fluid" src="assets/img/receita/3.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Picanha assada ao molho de alho</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- receita item 4-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal4">
+                            <img class="img-fluid" src="assets/img/receita/4.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Receita de Bife Wellington</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- receita item 5-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal5">
+                            <img class="img-fluid" src="assets/img/receita/5.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Torta de chocolate com leite em pó e uva</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- receita item 6-->
+                    <div class="receita-item">
+                        <a class="receita-link" data-bs-toggle="modal" href="#receitaModal6">
+                            <img class="img-fluid" src="assets/img/receita/6.jpg" alt="..." />
+                        </a>
+                        <div class="receita-caption">
+                            <div class="receita-caption-heading">Peixe ensopado pronto em 30 minutos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contato-->
+    <section class="page-section" id="contato">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">CONTATO</h2>
+            </div>
+            <form id="contatoForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6" style="margin: auto;">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Título" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Falta digitar </div>
+                        </div>
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Descrição" data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Falta digitar </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3" style="color:black;">
+                        <div class="fw-bolder" style="color:green;">Sucesso!</div>
+                        <div class="fw-bolder" style="color:black;">Obrigado</div>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erro ao enviar mensagem!</div></div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar mensagem</button></div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- receita Modals-->
+    <!-- receita item 1 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Salmão com ervas e tomate recheado</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/1.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>1kg de filé de salmão cortado em 4 partes
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de manteiga
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 dentes de alho picados
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/2 xícara (chá) de ervas picadas (salsa, cebolinha, alecrim e tomilho)
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/2 xícara (chá) de vinho branco seco
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Sal e pimenta-do-reino branca a gosto
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Tomate recheado:
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 tomates inteiros
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 e 1/2 xícara (chá) de ricota amassada
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de requeijão
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de iogurte natural
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/3 de xícara (chá) de amêndoas picadas
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Sal e cebolinha picada a gosto
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Queijo parmesão ralado para polvilhar
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- receita item 2 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Lasanha à bolonhesa com massa de pastel</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/2.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>1 xícara (chá) de bacon em cubos
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 cebola picada
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 dentes de alho amassados
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 folha de louro
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 cubo de caldo de carne
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>300g de carne moída
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>300g de carne moída
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 lata de tomate pelado em cubos
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/2 xícara (chá) de água
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Sal, pimenta-do-reino e orégano a gosto
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>500g de massa para pastel
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>300g de queijo mussarela fatiado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Queijo parmesão ralado e bacon frito em cubos para polvilhar
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- receita item 3 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Picanha assada ao molho de alho</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/3.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>1 picanha em peça (aproximadamente 1,5kg)
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 colher (sopa) de sal grosso
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/4 de xícara (chá) de manteiga
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 cabeça grande de alho separada em dentes
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 xícara (chá) de água
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 colher (chá) de pimenta-do-reino
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/2 colher (sopa) de maisena
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>200ml de creme de leite fresco
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 colher (chá) de ervas secas (orégano, manjericão ou tomilho)
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- receita item 4 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Receita de Bife Wellington</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/4.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>1 peça de filé-mignon (com aproximadamente 1,2kg)
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Sal e pimenta-do-reino a gosto
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 colheres (sopa) de azeite
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>200g de champignon fresco picado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 colheres (sopa) de manteiga
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 cebola picada
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1/2 xícara (chá) de cheiro-verde picado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de conhaque
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de mostarda
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 xícara (chá) de farinha de rosca
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>400g de massa folhada
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 gemas para pincelar
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Óleo para untar
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- receita item 5 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Torta de chocolate com leite em pó e uva</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/5.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>300g de biscoito de chocolate amanteigado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de margarina
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 clara
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Uvas e raspas de chocolate ao leite para decorar
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 latas de leite condensado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 colheres (sopa) de margarina
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 colheres (sopa) de leite em pó
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>100g de chocolate branco picado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 caixa de creme de leite (200g)
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 xícaras (chá) de uvas
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- receita item 6 modal popup-->
+    <div class="receita-modal modal fade" id="receitaModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h4 class="text-uppercase">Peixe ensopado pronto em 30 minutos</h4>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/receita/6.jpg" alt="..." />
+                                <strong><p>Ingredientes</p></strong>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>*</strong>3 batatas fatiadas
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 colheres (sopa) de óleo
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 dentes de alho picados
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>3 colheres (sopa) de extrato de tomate
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 cebola fatiada
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 pimentão verde fatiado
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>4 postas grandes do peixe de sua preferência (com 1kg aproximadamente)
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>2 tomates fatiados
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>1 xícara (chá) de água quente
+                                    </li>
+                                    <li>
+                                        <strong>*</strong>Sal, molho de pimenta vermelha e cheiro-verde picado a gosto
+                                    @*</li>*@
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
